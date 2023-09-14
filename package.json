@@ -1,0 +1,82 @@
+{
+	"name": "frontend",
+	"version": "0.1.0",
+	"private": true,
+	"proxy": "http://localhost:3000",
+	"dependencies": {
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@heroicons/react": "^1.0.6",
+		"@material-tailwind/react": "^2.1.0",
+		"@material-ui/pickers": "^3.3.11",
+		"@mui/icons-material": "^5.14.6",
+		"@mui/material": "^5.14.5",
+		"@mui/x-date-pickers": "^6.13.0",
+		"@react-google-maps/api": "^2.19.2",
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"all-the-cities": "^3.1.0",
+		"animate.css": "^4.1.1",
+		"animejs": "^3.2.1",
+		"aos": "^2.3.4",
+		"axios": "^1.5.0",
+		"babel-preset-react-app": "^10.0.1",
+		"cloudinary": "^1.40.0",
+		"cloudinary-core": "^2.13.0",
+		"file-saver": "^2.0.5",
+		"fs": "^0.0.1-security",
+		"mdb-react-ui-kit": "^6.2.0",
+		"pdf-lib": "^1.17.1",
+		"primereact": "^9.6.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-fetch-streams": "^1.1.2",
+		"react-id-swiper": "^4.0.0",
+		"react-modal": "^3.16.1",
+		"react-pdf": "^7.3.3",
+		"react-router": "^6.14.2",
+		"react-router-dom": "^6.14.2",
+		"react-scripts": "5.0.1",
+		"react-select": "^5.7.4",
+		"react-toastify": "^9.1.3",
+		"react-video-js-player": "^1.1.1",
+		"sharp": "^0.32.5",
+		"stream": "^0.0.2",
+		"swiper": "^10.2.0",
+		"tw-elements": "^1.0.0-beta3",
+		"web-streams-polyfill": "^3.2.1",
+		"web-vitals": "^2.1.4",
+		"whatwg-streams": "^0.1.1"
+	},
+	"scripts": {
+		"start": "react-scripts  start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"daisyui": "^3.5.1",
+		"eslint": "^8.48.0",
+		"tailwindcss": "^3.3.3"
+	}
+}
