@@ -1,0 +1,52 @@
+/* AutocompleteCountryInput.css */
+
+.autocomplete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* Centers the input vertically */
+  }
+  
+  .autocomplete-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Adjust the width as needed */
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .autocomplete-input:focus {
+    border-color: #007bff; /* Change the border color on focus */
+  }
+  
+  .suggestion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 200px; /* Limit the height of suggestions */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    position: absolute; /* Position it absolutely for centering */
+    top:50%; 
+    left: 0;
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Take the same width as the input */
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0; /* Highlight suggestions on hover */
+  }
+  

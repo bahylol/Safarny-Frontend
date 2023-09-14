@@ -1,0 +1,111 @@
+:root {
+	--background-dark: #2d3548;
+	--text-light: rgba(255, 255, 255, 0.6);
+	--text-lighter: rgba(255, 255, 255, 0.9);
+	--spacing-s: 8px;
+	--spacing-m: 16px;
+	--spacing-l: 24px;
+	--spacing-xl: 32px;
+	--spacing-xxl: 64px;
+	--width-container: 800px;
+}
+
+.PS_card-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-column-gap: var(--spacing-l);
+	grid-row-gap: var(--spacing-l);
+	max-width: var(--width-container);
+	width: 50%;
+}
+
+@media (min-width: 960px) {
+	.PS_card-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.PS_card {
+	list-style: none;
+	position: relative;
+}
+
+.PS_card:before {
+	content: '';
+	display: block;
+	padding-bottom: 150%;
+	width: 100%;
+}
+
+.PS_card__background {
+	background-size: cover;
+	background-position: center;
+	border-radius: 150px;
+	bottom: 0;
+	filter: brightness(0.75) saturate(1.2) contrast(0.85);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform-origin: center;
+	transform: scale(1) translateZ(0);
+	transition: filter 200ms linear, transform 200ms linear;
+}
+
+.PS_card:hover .PS_card__background {
+	transform: scale(1.05) translateZ(0);
+}
+
+.PS_card-grid:hover > .PS_card:not(:hover) .PS_card__background {
+	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.PS_card__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Vertically center content */
+	align-items: center; /* Horizontally center content */
+	left: 0;
+	padding: var(--spacing-l);
+	position: absolute;
+	top: 0;
+}
+
+.PS_card__category {
+	color: var(--text-light);
+	font-size: 0.9rem;
+	margin-bottom: var(--spacing-s);
+	text-transform: uppercase;
+}
+
+.PS_card__heading {
+	color: var(--text-lighter);
+	font-size: 1.5rem;
+	text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+	line-height: 1.4;
+}
+
+/* SWIPER */
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: transparent;
+	border-color: transparent;
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

@@ -1,0 +1,13 @@
+.slide-up {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.slide-down {
+	opacity: 1;
+	max-height: 1000px; /* Adjust this value to a larger value than your content's height */
+	overflow: hidden;
+	transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}

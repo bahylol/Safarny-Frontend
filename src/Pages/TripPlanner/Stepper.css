@@ -1,0 +1,86 @@
+.custom-form {
+	width: 80%;
+	margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Media query for screens smaller than a certain width (e.g., 640px) */
+@media (max-width: 640px) {
+	.custom-form {
+		width: calc(100% - 2rem); /* Adjust the width for smaller screens with a 2rem margin */
+		margin: 1rem; /* Add a 1rem margin on all sides */
+	}
+}
+
+
+.photos-container
+{
+max-width: 300px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.outputName
+{
+font-weight:bold ;
+font-size: 20px;
+margin-bottom: 15px;
+
+}
+.ouputcontainer
+{
+	position: relative;
+	margin: 20px auto;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.myMap
+{
+	margin-left: 800px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.swiper {
+	width: 160px;
+	height: 200px;
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 18px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.swiper-slide {
+	border: 6px solid white;
+}
+
+.card-number {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+
+.month-name {
+	margin-top: 30px;
+}
+
+.smaller-text {
+	font-size: 3rem; /* Adjust the font size as needed */
+}
+
+/* Media query for screens smaller than a certain width (e.g., 640px) */
+@media (max-width: 640px) {
+	.smaller-text {
+		font-size: 1.5rem; /* Adjust the font size for smaller screens */
+	}
+}

@@ -1,0 +1,25 @@
+/* CSS for the gradient background */
+.gradient-bg-button {
+	background: linear-gradient(
+		to right,
+		rgb(143, 175, 198),
+		rgb(20, 64, 145)
+	); /* Gradient from white to blue */
+	color: white; /* Text color to ensure readability */
+	animation: moveGradient 5s linear infinite alternate; /* Add background animation */
+	background-size: 200% 100%;
+	transition: background 1s ease; /* Smooth transition on hover */
+}
+
+.gradient-bg-button:hover {
+	background: rgb(101, 101, 101); /* Change background to gray on hover */
+}
+
+@keyframes moveGradient {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+}
